@@ -1,0 +1,60 @@
+theory: Global Workspace Theory
+key: global_workspace
+status: core_claims revised and approved 2026-10-11
+core_claims:
+- id: gwt-c1
+  text: Many specialised processors (perception, memory, evaluation, language, motor control) work in parallel, and the data
+    flows they carry, from memory and from the senses, compete constantly with one another. Only the content that wins this
+    competition becomes conscious.
+  source: description
+- id: gwt-c2
+  text: The winning content is sent out across the brain, so it becomes available at once to attention, memory, verbal description,
+    assessment and motor response, while competing and conflicting data flows are inhibited. Being accessible throughout the
+    brain is what makes one aware of it.
+  source: description
+- id: gwt-c3
+  text: A set of interconnected cortical pyramidal neurons with long-range excitatory axons, dense in prefrontal, temporoparietal
+    and cingulate regions and linked to thalamocortical loops, ties the specialised processors together. A conscious content
+    is carried by the sustained, amplified activity of a subset of these neurons while the rest are inhibited, and this leads
+    to a report of the experience.
+  source: description
+- id: gwt-c4
+  text: 'Three observations constrain any account: a considerable amount of processing is possible without awareness, attention
+    is a prerequisite for awareness, and awareness is required for some tasks, namely those needing durable information maintenance,
+    novel combinations of operations or spontaneous generation of intentional behavior.'
+  source: description
+- id: gwt-c5
+  text: The prefrontal cortex is thought to coordinate and sustain the wide availability of a conscious content. In the newer
+    brain-based version, however, the whole cortex, with the thalamus, acts as a flexibly recruited oscillatory system, so
+    a sharp prefrontal versus non-prefrontal division is misleading.
+  source: description
+- id: gwt-c6
+  text: 'Becoming aware of a stimulus is temporally flexible: sensory information is held for a while in a shared network
+    and read out when it becomes relevant, so attention directed to its location after it has gone can bring that earlier
+    stimulus into awareness.'
+  source: description
+- id: gwt-c7
+  text: The account holds that wide availability of a content occurs at the start and at the end of an experience and relies
+    on the prefrontal cortex.
+  source: description
+seed_passages: []
+seed_passages_note: 'none: no abstract-only or OA-PDF seed with an abstract in 1995-2015 (in-corpus seeds are silver and excluded)'
+loc_description_pages:
+- slug: baars-s-and-dehaene-s-global-workspace-theory
+  chars: 7482
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: sergent-s-global-playground
+  chars: 3880
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+public_release_note: LoC description text, loc_description_pages segment text and seed abstract text removed for licensing;
+  regenerate with src/level3_concepts/make_profiles.py from the scraped pages.

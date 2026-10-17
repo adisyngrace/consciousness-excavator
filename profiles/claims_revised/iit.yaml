@@ -1,0 +1,56 @@
+theory: Integrated Information Theory
+key: integrated_information
+status: APPROVED 2026-10-11 (copied into profiles/iit.yaml)
+core_claims:
+- id: iit-c1
+  text: |-
+    The starting point is experience itself: its essential properties (it exists intrinsically, is structured, is specific, is unified and is definite) are each translated into a requirement on what a physical system must be like, in terms of its ability to make a difference to itself.
+  source: description
+  change: removed 'cause-effect power' (close to a listed strong term); now only the experience-to-requirements
+    method
+  old_text: |-
+    The theory starts from the essential properties of experience (it exists intrinsically, is structured, is specific, is unified and is definite) and asks what a physical system must be like to account for each property, in terms of its cause-effect power on itself.
+- id: iit-c2
+  text: |-
+    Each experience is the particular way it is, by differing from all alternatives, so the physical system must specify a particular pattern of what its present state implies about its past and future states, one that sets it apart from every other possible pattern.
+  source: description
+  change: removed the listed strong term 'cause-effect repertoire'; now only differentiation
+  old_text: |-
+    Every experience is specific: it is what it is by differing from all alternative experiences, so the physical substrate must specify a particular cause-effect repertoire that distinguishes its present state from other possible states.
+- id: iit-c3
+  text: |-
+    Each experience is unified, so the way a system's parts constrain one another cannot be reduced to what independent subsets of the parts do alone. How much would be lost by cutting the system apart is measured by a quantity, phi, and degrees of consciousness covary with it.
+  source: description
+  change: removed 'cause-effect structure' (listed strong term); now only unity and its measure
+  old_text: |-
+    Every experience is unified, so the substrate's cause-effect structure must be irreducible: it cannot be partitioned into non-interdependent parts without loss. The amount of this irreducibility is measured by a quantity, phi, and degrees of consciousness covary with it.
+- id: iit-c4
+  text: |-
+    Each experience is definite in its content and in its spatial and temporal grain, so the set of elements that counts as supporting it is the one whose organisation is maximally irreducible; overlapping, larger or smaller sets are excluded.
+  source: description
+  change: removed 'cause-effect structure' (listed strong term); now only exclusion
+  old_text: |-
+    Every experience is definite in content and in spatio-temporal grain, so only the set of elements whose cause-effect structure is maximally irreducible is the substrate; overlapping or larger and smaller sets are excluded.
+- id: iit-c5
+  text: |-
+    Each experience is identical to the overall shape formed by all the distinctions and relations the irreducible system specifies, a shape whose mathematical properties match the properties of that experience and which is, in one description, a shape seen from the inside.
+  source: description
+  change: removed 'qualia space' (adjacent) and the near-term 'maximally irreducible structure of concepts'; kept
+    the identity-with-a-shape idea
+  old_text: |-
+    Each experience is identical to the maximally irreducible structure of concepts that the substrate specifies, a shape in an abstract 'qualia space' whose mathematical properties match the properties of the experience.
+- id: iit-c6
+  text: |-
+    Consciousness is a property of how a physical system is organised and of what it can constrain in its own past and future, not of what it computes. A simulation that only reproduces the function is therefore not conscious, and the substrate need not be a brain or even biological.
+  source: description
+  change: removed 'purely feed-forward' (not in the description); now only the intrinsic-not-functional claim
+  old_text: |-
+    Consciousness is an intrinsic property of how a physical system is organised and what it can constrain in its own past and future, not of what it computes. A simulation or purely feed-forward arrangement that merely reproduces the function is not thereby conscious, and brains are not the only possible substrate.
+- id: iit-c7
+  text: |-
+    Each experience is composed of many distinctions, so combinations of a system's elements, not only single elements, must themselves make a difference to the system. Higher-order combinations specify concepts, and the set of all of them gives the overall form of the experience.
+  source: description
+  change: |-
+    REPLACED: old text restated the specific/unified facts already covered by c2 and c3; now the composition requirement, which no other claim covers (the experience-is-unique-and-vast point stays in c2/c3)
+  old_text: |-
+    Experience is unique and there is an enormous number of distinct experiences, yet each is apprehended as a whole. Taking both facts seriously and casting them in the language of information over states and their interrelations, rather than the material the system is made of, is what yields the theory.

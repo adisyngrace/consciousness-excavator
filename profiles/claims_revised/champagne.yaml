@@ -1,0 +1,62 @@
+theory: Champagne's semiotic account
+key: champagne_semiotic
+status: APPROVED 2026-10-11 (copied into profiles/champagne.yaml)
+core_claims:
+- id: champagne-c1
+  text: |-
+    A felt quality (what a color or a pain is like) can be pulled apart from every causal and inferential relation it figures in only in thought, never in fact. This act of mental separation (prescission) shows what can and cannot be inferred from the quality alone.
+  source: description
+  change: unchanged
+  old_text: |-
+    A felt quality (what a color or a pain is like) can be pulled apart from every causal and inferential relation it figures in only in thought, never in fact. This act of mental separation (prescission) shows what can and cannot be inferred from the quality alone.
+- id: champagne-c2
+  text: |-
+    Signs have three kinds of vehicle, not two: type, token and tone. A tone is a bare quality considered before any instance or meaning is attached, and admitting it as a category stops experiential qualities from looking explanatorily anomalous.
+  source: description
+  change: unchanged
+  old_text: |-
+    Signs have three kinds of vehicle, not two: type, token and tone. A tone is a bare quality considered before any instance or meaning is attached, and admitting it as a category stops experiential qualities from looking explanatorily anomalous.
+- id: champagne-c3
+  text: |-
+    Reference to another person's experience can work through resemblance (iconicity) rather than causal contact or convention, so one can grasp what an experience is like without having been exposed to its cause.
+  source: description + 2014 Champagne abstract
+  change: unchanged
+  old_text: |-
+    Reference to another person's experience can work through resemblance (iconicity) rather than causal contact or convention, so one can grasp what an experience is like without having been exposed to its cause.
+- id: champagne-c4
+  text: |-
+    The 'hard problem' is dissolved, not solved: the distinction between quality and function is legitimate, but it generates a puzzle only when it is reified into a separate kind of thing or a separate module of the mind.
+  source: description + 2009 Champagne abstract
+  change: unchanged
+  old_text: |-
+    The 'hard problem' is dissolved, not solved: the distinction between quality and function is legitimate, but it generates a puzzle only when it is reified into a separate kind of thing or a separate module of the mind.
+- id: champagne-c5
+  text: |-
+    A thing can be singled out by a mind's activity without depending on any mind for what it is: the person does the isolating, but which features the isolated quality has is fixed independently of who does it.
+  source: description
+  change: was a near-repeat of c1 (isolation is something humans do); now states only the realism claim (mind-involving,
+    not mind-dependent)
+  old_text: |-
+    Qualities are mind-involving without being mind-dependent: isolating a quality is something humans do, but what results when the isolation is done properly is not up to them.
+- id: champagne-c6
+  text: |-
+    Explanation should rest on third-person elements that can be detected and checked, with no appeal to introspection; science explains the mechanisms, and philosophy justifies the persistent sense that something is left over.
+  source: description
+  change: unchanged
+  old_text: |-
+    Explanation should rest on third-person elements that can be detected and checked, with no appeal to introspection; science explains the mechanisms, and philosophy justifies the persistent sense that something is left over.
+- id: champagne-c7
+  text: |-
+    Reality can be sorted into layers by modal level: regular sign relations (like coded language) subsume actual ones (here-and-now events), which subsume possible ones (qualities tied to whatever would be similar to them). Locating a case at its level shows how complex the sign process is, and lets uninterpreted phenomena such as qualities be counted as real.
+  source: description + 2015 Champagne abstract
+  change: removed 'without a separate metaphysical substance' (not supported by the description or the 2015 abstract);
+    stated the layering and what it buys more plainly
+  old_text: |-
+    Reality is layered by sign-action: regular (law-like) sign relations subsume actual events, which subsume mere possibilities such as qualities. Tracking which layer a case sits at gives a way to treat consciousness without a separate metaphysical substance.
+- id: champagne-c8
+  text: |-
+    Habit makes perception efficient but leads us to perceive what we expect rather than what is given. A disciplined kind of attention that suspends practical and technological automatisms lets appearances be observed in their qualitative, resistant and mediating aspects.
+  source: description
+  change: removed the listed strong term 'phaneroscopy'
+  old_text: |-
+    Habit makes perception efficient but makes us perceive what we expect rather than what is given. A disciplined looking (phaneroscopy) that suspends practical and technological automatisms lets appearances be observed in their qualitative, resistant and mediating aspects.

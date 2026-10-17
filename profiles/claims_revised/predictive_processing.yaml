@@ -1,0 +1,62 @@
+theory: Predictive Processing / Free Energy Principle
+key: predictive_processing_fep
+status: APPROVED 2026-10-11 (copied into profiles/predictive_processing.yaml)
+core_claims:
+- id: predictive_processing-c1
+  text: |-
+    The brain does not passively receive sensory signals. It continuously generates predictions about the causes of its sensory input and top-down signals carry these predictions, while bottom-up signals carry only the mismatches (prediction errors).
+  source: description
+  change: unchanged
+  old_text: |-
+    The brain does not passively receive sensory signals. It continuously generates predictions about the causes of its sensory input and top-down signals carry these predictions, while bottom-up signals carry only the mismatches (prediction errors).
+- id: predictive_processing-c2
+  text: |-
+    Perception, learning and action are all described by one operation: reducing the mismatch between predicted and actual sensory input, either by revising the internal model or by acting on the world. This approximates Bayesian inference, in which prior expectations are combined with sensory evidence.
+  source: description + 2005 Friston abstract
+  change: removed the near-term 'prediction error is minimised' (listed strong term 'prediction error minimization');
+    same idea
+  old_text: |-
+    Perception, learning and action all come from one operation: adjusting internal models or the world so that prediction error is minimised. This is an approximation to Bayesian inference, in which prior expectations are combined with sensory evidence.
+- id: predictive_processing-c3
+  text: |-
+    The internal model is hierarchical, so that higher levels supply context-sensitive priors to lower levels. This predicts reciprocal cortical connections, an asymmetry between forward and backward connections, and effects such as repetition suppression and the mismatch negativity.
+  source: seed abstract (2005 Friston)
+  change: unchanged
+  old_text: |-
+    The internal model is hierarchical, so that higher levels supply context-sensitive priors to lower levels. This predicts reciprocal cortical connections, an asymmetry between forward and backward connections, and effects such as repetition suppression and the mismatch negativity.
+- id: predictive_processing-c4
+  text: |-
+    Living organisms persist by keeping themselves in a narrow set of stable, low-surprise states (attractors, as in homeostasis). Minimising surprise, the gap between expected and actual sensory states, is the formal expression of this self-maintenance.
+  source: description
+  change: removed 'free energy' (the theory's own name); same idea
+  old_text: |-
+    Organisms stay alive by keeping their states within a narrow set of low-surprise attractor states (homeostasis). Minimising the difference between expected and actual sensory states, i.e. free energy or surprise, is the formal expression of this self-maintenance.
+- id: predictive_processing-c5
+  text: |-
+    Experience is not a thing with fixed attributes but the outcome of an inferential process, the brain's best guess about the causes of its sensations, comparable to a natural process such as evolution or the weather.
+  source: description
+  change: one idea only; the 'facilitates flexible prediction and grounds selfhood' part is now in c8
+  old_text: |-
+    Consciousness is treated as a process of inference, not as a thing. Experience is the brain's best guess about the causes of its sensations, and awareness is thought to facilitate flexible prediction about future states and to ground selfhood and action.
+- id: predictive_processing-c6
+  text: |-
+    Each prediction and each error signal carries an expected reliability (its precision) that sets how strongly it is weighted. A higher level that controls precision across all layers is proposed to give the system its flexible, general-purpose epistemic agency.
+  source: description
+  change: removed 'attention' (not in the description or seeds); one idea
+  old_text: |-
+    The precision (expected reliability) assigned to predictions and to errors controls their weighting, and a higher level that sets precision across all layers could account for attention and for flexible, general-purpose agency.
+- id: predictive_processing-c7
+  text: |-
+    A related family of views identifies the conscious state with recurrent top-down (reentrant) signalling itself, whereas the predictive view treats that signalling as carrying predictions about the causes of the senses and does not by itself say what makes a state conscious.
+  source: description
+  change: one idea (how the two families differ); the old text mixed a hedge with the contrast
+  old_text: |-
+    Prediction may not by itself explain consciousness; it may only underpin perception. Related reentry accounts say that recurrent top-down signalling is itself the conscious state.
+- id: predictive_processing-c8
+  text: |-
+    The predictive capacity evolved for survival in mobile creatures, which must anticipate the outcome of each movement, and consciousness is thought to facilitate it by supporting awareness, responsiveness and flexible handling of future states.
+  source: description
+  change: |-
+    now evolutionary role and the function of awareness; the extended-mind sentence is dropped (a claim about where the mind is located, not what produces consciousness)
+  old_text: |-
+    The brain is a prediction engine that evolved for survival in mobile creatures, which must anticipate the outcome of each movement. The predictive brain can be part of larger loops of body, tools and environment rather than being confined to the skull.

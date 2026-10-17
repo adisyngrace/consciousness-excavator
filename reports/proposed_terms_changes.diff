@@ -1,0 +1,66 @@
+--- a/src/terms.yaml
++++ b/src/terms.yaml
+@@ -152,6 +152,7 @@
+     strong:
+       - integrated information theory
+       - integrated information theory of consciousness
++      - information integration theory    # Tononi's 2004 name (PMC543470 itself is not flagged today); caveat: N. Anderson's unrelated 'information integration theory' in psychology
+       - cause-effect structure
+       - intrinsic cause-effect power
+       - maximally irreducible conceptual structure
+@@ -250,10 +251,15 @@
+       - predictive mind
+       - active inference
+       - prediction error minimization
+-      - predictive machine
+       - beautiful loop
+     abbreviation: [FEP, PP, PC]    # PP also polypropylene/pancreatic polypeptide; PC also personal computer
++    # Bare "predictive processing" is also used generically (speech, language, timing papers). It counts as a direct
++    # mention only if corroborated: in the title/abstract, or the paper also has another strong or close_term of this
++    # theory. (The global domain_context rule already applies to every strong term and does not remove these.)
++    needs_corroboration:
++      - predictive processing
+     close_term:
++      - predictive machine    # demoted from strong after the precision audit (2 of 2 audited hits were false positives)
+       - predictive coding
+       - hierarchical predictive coding
+       - Bayesian brain
+--- a/src/level2_terms/terms.py
++++ b/src/level2_terms/terms.py
+@@ -68,6 +68,7 @@
+     ref_rx: list[tuple[re.Pattern, re.Pattern, Landmark]] = field(default_factory=list)    # (surname, year, lm)
+     intext_rx: list[tuple[re.Pattern, dict[str, Landmark]]] = field(default_factory=list)   # per surname
+     strong_terms: list[str] = field(default_factory=list)
++    needs_corroboration: set[str] = field(default_factory=set)
+ 
+ 
+ @dataclass
+@@ -118,7 +119,7 @@
+                 rf"[\s,;(\[]{{0,3}}(?P<y>{'|'.join(years)})[a-z]?(?!\d)")
+         intext.append((re.compile(cite, re.I), years))
+     return TheoryPatterns(key, spec.get("name", key), main, groups, abbr, agroups, lms, ref_rx, intext,
+-                          list(spec.get("strong") or []))
++                          list(spec.get("strong") or []), set(spec.get("needs_corroboration") or []))
+ 
+ 
+ def load_terms(path: Path = TERMS_PATH) -> Terms:
+--- a/src/level2_terms/scan.py
++++ b/src/level2_terms/scan.py
+@@ -79,6 +79,17 @@
+                 if rx_y.search(ref) and rx_s.search(ref) and (not lm.title_hint or lm.title_hint.lower() in ref.lower()):
+                     _add(hits, (lm.key, "landmark_ref", "references"), ref, rx_s.search(ref))
+                     break
++        if th.needs_corroboration:
++            # a term in `needs_corroboration` counts only if it is in the title/abstract or the paper also has another
++            # strong or close_term of the same theory in a counted section; otherwise its hits become
++            # tier "strong_uncorroborated" (stored, never a direct mention)
++            others = any(k[1] in ("strong", "close_term") and k[0] not in th.needs_corroboration
++                         and k[2] in COUNTED_SECTIONS for k in hits)
++            for term in th.needs_corroboration:
++                ks = [k for k in hits if k[0] == term and k[1] == "strong"]
++                if ks and not others and not any(k[2] in ("title", "abstract") for k in ks):
++                    for k in ks:
++                        hits[(k[0], "strong_uncorroborated", k[2])] = hits.pop(k)
+         strong_anywhere = any(t == "strong" for (_, t, _s) in hits)
+         for (term, tier, sec), rec in hits.items():
+             if tier == "abbreviation_raw":

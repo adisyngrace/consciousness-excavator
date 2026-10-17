@@ -1,0 +1,154 @@
+theory: Panpsychism
+key: panpsychism
+status: core_claims revised and approved 2026-10-11
+core_claims:
+- id: panpsychism-c1
+  text: Experience (or a precursor of experience) is a primitive, non-reducible feature of the fundamental constituents of
+    physical reality, as basic as fields and particles, rather than something that appears only in brains.
+  source: description
+- id: panpsychism-c2
+  text: Physics tells us how fundamental fields and particles relate to each other but not what they are in themselves. The
+    proposal is that their intrinsic nature is experiential, which places consciousness inside the physical world and gives
+    it a causal role.
+  source: description
+- id: panpsychism-c3
+  text: Richer minds arise when micro-level experiential properties combine under the right conditions. How many simple subjects
+    or properties add up to one unified larger experience, or how a single cosmic mind is divided into individual ones, is
+    the central unsolved difficulty.
+  source: description
+- id: panpsychism-c4
+  text: Proposed ways for small experiencing units to merge into larger ones include synchronised oscillation or resonance,
+    with electromagnetic fields serving as the binding medium in biological systems.
+  source: description
+- id: panpsychism-c5
+  text: If experience is not to be explained away, then either the concept of experience or the concept of nature must be
+    revised; this view revises nature by placing experience at the fundamental level instead of deflating experience, and
+    so avoids both reduction and a separate mental realm.
+  source: description
+- id: panpsychism-c6
+  text: Experience cannot be derived from the arrangement of parts that are entirely non-experiential, so if brains are conscious,
+    the matter they are made of must already have an experiential aspect.
+  source: description + 2009 Strawson abstract
+- id: panpsychism-c7
+  text: 'The view comes in versions that differ in what is fundamental: experience in the smallest particles, in the universe
+    as a whole, in a field, or in fundamental simple subjects (monads).'
+  source: description
+seed_passages:
+- source: David Chalmers (1995) Facing up to the problem of consciousness
+  route: doi_only; full text via none (not extracted)
+  use: profile-only (abstract; not in corpus)
+- source: 'Galen Strawson (2009) Realistic monism: why physicalism entails panpsychism'
+  route: doi_only; full text via none (not extracted)
+  use: profile-only (abstract; not in corpus)
+excluded_seeds:
+- source: David Chalmers (2003) Consciousness and its place in nature
+  route: doi_only; full text via none (not extracted)
+  use: profile-only (abstract; not in corpus)
+  reason_excluded: abstract is only a chapter table of contents (user decision 2026-10-11)
+- source: Erik Verlinde (2011) On the Origin of Gravity and the Laws of Newton
+  route: doi_only; full text via pdf (not extracted)
+  use: profile-only (abstract; not in corpus)
+  reason_excluded: physics paper (entropic gravity), off-topic for the profile (user decision 2026-10-11)
+loc_description_pages:
+- slug: panpsychisms-overview
+  chars: 5468
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: chalmers-s-panpsychism
+  chars: 4213
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: goff-s-panpsychism
+  chars: 6258
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: strawson-s-panpsychism
+  chars: 1893
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: monadic-panpsychism
+  chars: 10716
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+- slug: micropsychism
+  chars: 2414
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: cosmopsychism
+  chars: 4196
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: starrett-s-radical-panpsychism
+  chars: 6601
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: wallace-s-panpsychism-inside-physics
+  chars: 3073
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: faggin-s-quantum-information-based-panpsychism
+  chars: 6077
+  use_in_profile: false
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: morch-s-phenomenal-causal-powers-panpsychism
+  chars: 3562
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: a-harris-s-panpsychism-as-fundamental-field
+  chars: 2390
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: panpsychism-additional-theories
+  chars: 7604
+  use_in_profile: false
+  segments:
+  - id: p1
+    use_in_profile: true
+public_release_note: LoC description text, loc_description_pages segment text and seed abstract text removed for licensing;
+  regenerate with src/level3_concepts/make_profiles.py from the scraped pages.

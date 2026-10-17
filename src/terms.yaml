@@ -1,0 +1,332 @@
+# Term lists for Level 2 (direct term mentions).  DRAFT v2 -- yours to edit.
+#
+# How the scanner (Step 3) uses each tier
+#   strong            unambiguous names/phrases. A hit in title, abstract, intro, body or discussion = DIRECT MENTION
+#                     (subject to the domain_context rule below).
+#   abbreviation      short forms (case-sensitive, whole word). Count only if a STRONG term of the same theory also
+#                     appears in the same paper; otherwise recorded as "unconfirmed".
+#   close_term        NEW. Names of closely related ideas or sibling vocabulary (e.g. "predictive coding" for the FEP
+#                     theory). Scanned and stored (tier = close_term) but NEVER sets direct_mention. Stored as its
+#                     own flag `close_term_hit` so Level 3 can decide how to treat it (the default Level 3
+#                     exclusion uses direct_mention only, so close-term papers stay eligible).
+#   adjacent          NEW. Specific related concepts that are not the theory itself. Scanned and stored
+#                     (tier = adjacent), never a direct mention, never counted toward Level 2 totals. Useful as
+#                     Level 3 evidence/diagnostics ("paper uses theory-adjacent vocabulary but not the theory").
+#   landmark_refs     NEW. Surname + year pairs of landmark works. Matched in the REFERENCE LIST only, stored as
+#                     `cites_landmark` (tier = landmark_ref), separate from direct_mention. The same pairs are also
+#                     matched as in-text citations ("Tononi 2004", "Tononi et al., 2004", "(Tononi & Koch, 2015)")
+#                     in non-reference sections and stored as `cites_author_year` (weak). Both are weak signals and
+#                     NEVER count as a direct mention. This REPLACES the old bare-name `author` tier: a bare surname
+#                     ("Clark", "Koch", "Rao", "Seth") is far too ambiguous.
+#   excluded_generic  deliberately NOT counted, and only for meaningless/ambiguous single words.
+#
+# GLOBAL RULE -- domain_context (see the `domain_context:` block at the bottom of this file):
+#   a strong-term hit counts as a direct mention only if the paper also contains at least
+#   `domain_context_min` DISTINCT words from that list. close_term / adjacent / landmark hits are recorded
+#   regardless, but carry a `domain_ok` boolean so you can filter them the same way later.
+#
+# Matching is case-insensitive and whole-word, except abbreviations (case-sensitive). The scanner expands
+# hyphen/space variants ("free-energy principle" = "free energy principle"), British/American spelling and plurals
+# automatically, so you only write one form below. Inflections that change the word (panpsychist vs panpsychism)
+# are listed explicitly.
+#
+# Reference lists are scanned separately and reported as "cited_in_references", never as a direct mention.
+#
+# Sources: LoC description text for each theory (distinctive-vocabulary pass), the Level 1 reference titles, and
+# corpus document-frequency checks (see reports/terms_df.md for how many corpus papers each term appears in).
+
+domain_context_min: 2      # N distinct domain_context words required for a strong hit to count (configurable)
+
+theories:
+
+  # ---------------------------------------------------------------------------------------------------------
+  champagne_semiotic:
+    name: "Champagne's semiotic account"
+    # Marc Champagne's account is a Peircean one: phenomenal qualities (qualia) can be separated from causal
+    # relations by "prescission" and referred to by iconicity (resemblance), so the hard problem is dissolved
+    # rather than solved. Real LoC/seed vocabulary: Peirce, phaneroscopy/phaneron, firstness, prescission,
+    # iconicity, type/token/tone, synechism, objective idealism, Husserl.
+    #
+    # EXPECT FEW STRONG HITS: the 1995-2015 open-access biomedical corpus has almost nothing in this literature
+    # (Europe PMC: "phaneroscopy" 0 hits, "Peircean" 6). The strong list is therefore narrow on purpose.
+    # "semiotic"/"semiotics" moved from excluded_generic to `adjacent` (v2): they are the theory's home field but
+    # are used outside consciousness (see the 10+10 snippet check in the Step 2 notes), so they are diagnostics,
+    # not direct mentions.
+    # SCOPE DECISION FOR YOU: this strong list is "Peircean phenomenology/semiotics of consciousness", broader than
+    # Champagne personally.
+    strong:
+      - phaneroscopy
+      - phaneroscopic
+      - phaneron
+      - Peircean semiotics
+      - Peirce's semiotics
+      - semiotic account of consciousness
+      - semiotic theory of consciousness
+      - semiotic account of phenomenal consciousness
+      - qualisign
+      - synechism
+      - firstness            # Peirce's category; flagged: check document frequency before keeping
+    abbreviation: []
+    close_term: []
+    adjacent:
+      - semiotic
+      - semiotics
+      - semiosis
+      - biosemiotics
+      - biosemiotic
+      - interpretant
+      - thirdness
+    landmark_refs:           # surname, year, optional title_hint (substring, case-insensitive) to disambiguate
+      - {surname: Peirce, year: 1931}
+      - {surname: Peirce, year: 1992}
+      - {surname: Champagne, year: 2009}
+      - {surname: Champagne, year: 2014}
+      - {surname: Champagne, year: 2018}
+      - {surname: Deely, year: 2001}
+      - {surname: Atkins, year: 2018}
+      - {surname: Short, year: 2007, title_hint: Peirce}      # Peirce's Theory of Signs
+      - {surname: Sebeok, year: 2001}
+    excluded_generic:
+      - prescission          # 923 hits in Europe PMC 1995-2015, almost all PreScission PROTEASE in methods sections
+      - prescissive          # as above
+      - iconicity            # linguistics/phonology sense
+      - sign
+      - symbol
+      - index
+      - icon
+      - qualia               # generic across philosophy of mind
+      - quality
+      - feeling
+      - habit
+      - type
+      - token
+      - tone
+      - phenomenal consciousness
+      - consciousness
+
+  # ---------------------------------------------------------------------------------------------------------
+  global_workspace:
+    name: Global Workspace Theory
+    # Baars (global workspace) and Dehaene/Changeux/Naccache (global neuronal workspace, GNW). LoC page also
+    # covers Sergent's "global playground". "ignition" and "conscious access" moved to `adjacent` (v2).
+    strong:
+      - global workspace theory
+      - global workspace
+      - global neuronal workspace
+      - global neuronal workspace theory
+      - neuronal workspace
+      - global playground
+      - theater of consciousness
+      - theatre of consciousness
+      - conscious access hypothesis
+    abbreviation: [GWT, GNW, GNWT]
+    close_term: []
+    adjacent:
+      - ignition             # check snippets: also cardiac/combustion/cancer-ignition senses; domain_ok will tell
+      - conscious access
+    landmark_refs:
+      - {surname: Baars, year: 1988}
+      - {surname: Baars, year: 1997}
+      - {surname: Baars, year: 2002}
+      - {surname: Dehaene, year: 1998}
+      - {surname: Dehaene, year: 2001}
+      - {surname: Dehaene, year: 2003}
+      - {surname: Dehaene, year: 2011}
+      - {surname: Mashour, year: 2020}
+      - {surname: Sergent, year: 2004}
+    excluded_generic:
+      - workspace            # office/web/software senses
+      - global
+      - broadcast
+      - broadcasting
+      - theater
+      - theatre
+      - consciousness
+
+  # ---------------------------------------------------------------------------------------------------------
+  integrated_information:
+    name: Integrated Information Theory
+    # Tononi's IIT: axioms/postulates, intrinsic cause-effect structure, phi. "integrated information" alone is
+    # NOT strong: 813 hits in Europe PMC 1995-2015, mostly multisensory integration. v2: it moves to `adjacent`
+    # together with the PCI and "qualia space".
+    strong:
+      - integrated information theory
+      - integrated information theory of consciousness
+      - information integration theory    # Tononi's 2004 name; all 17 corpus papers using the phrase hand-labelled Y (2026-10-10). N. Anderson's unrelated psychology theory did not occur
+      - cause-effect structure
+      - intrinsic cause-effect power
+      - maximally irreducible conceptual structure
+      - cause-effect repertoire
+      - IIT 3.0
+      - IIT 4.0
+    abbreviation: [IIT]    # also: Indian Institutes of Technology, "intention-to-treat"-like uses
+    close_term: []
+    adjacent:
+      - integrated information
+      - perturbational complexity index
+      - qualia space
+    landmark_refs:
+      - {surname: Tononi, year: 1998}
+      - {surname: Tononi, year: 2004}
+      - {surname: Tononi, year: 2008}
+      - {surname: Tononi, year: 2012}
+      - {surname: Tononi, year: 2016}
+      - {surname: Balduzzi, year: 2008}
+      - {surname: Oizumi, year: 2014}
+      - {surname: Casali, year: 2013}          # PCI paper (Massimini lab)
+      - {surname: Massimini, year: 2005}
+      - {surname: Koch, year: 2016}
+      - {surname: Tononi, year: 2015}          # Tononi & Koch, "Consciousness: here, there and everywhere?"
+    excluded_generic:
+      - information integration
+      - phi
+      - integration
+      - information
+      - exclusion
+      - complexity
+
+  # ---------------------------------------------------------------------------------------------------------
+  panpsychism:
+    name: Panpsychism
+    # Includes the family the LoC page pools: micropsychism, cosmopsychism, panprotopsychism, monadic
+    # panpsychism. Inflections listed explicitly. "Russellian monism" and "dual-aspect monism" are related but
+    # not panpsychism proper: `adjacent` (v2).
+    strong:
+      - panpsychism
+      - panpsychist
+      - panpsychists
+      - panpsychic
+      - panpsychistic
+      - micropsychism
+      - micropsychist
+      - cosmopsychism
+      - cosmopsychist
+      - panprotopsychism
+      - panprotopsychist
+      - panexperientialism
+      - combination problem
+      - constitutive panpsychism
+      - monadic panpsychism
+    abbreviation: []
+    close_term: []
+    adjacent:
+      - dual-aspect monism
+      - Russellian monism
+    landmark_refs:
+      - {surname: Chalmers, year: 1995}
+      - {surname: Chalmers, year: 1996}
+      - {surname: Chalmers, year: 2003}
+      - {surname: Strawson, year: 2006}
+      - {surname: Strawson, year: 2008}
+      - {surname: Strawson, year: 2009}
+      - {surname: Seager, year: 1995}
+      - {surname: Seager, year: 2006}
+      - {surname: Goff, year: 2017}
+      - {surname: Goff, year: 2019}
+      - {surname: Mørch, year: 2017}
+      - {surname: Coleman, year: 2014}
+    excluded_generic:
+      - idealism
+      - dualism
+      - monism
+      - fundamental
+      - quantum
+      - field
+      - consciousness
+      - mind
+
+  # ---------------------------------------------------------------------------------------------------------
+  predictive_processing_fep:
+    name: Predictive Processing / Free Energy Principle
+    # Friston's FEP/active inference plus predictive processing (Clark, Hohwy, Seth, Rao & Ballard) and the
+    # "beautiful loop" (Laukkonen, Friston, Chandaria).
+    # v2: "predictive coding", "hierarchical predictive coding", "Bayesian brain", "predictive brain",
+    # "variational free energy" and "Markov blanket" are now close_term (sibling vocabulary, not the theory
+    # itself; "predictive coding" also means linear predictive coding in speech/audio engineering).
+    # Kept strong: predictive processing, free energy principle, active inference, prediction error
+    # minimization, predictive mind (plus predictive machine, beautiful loop from v1).
+    strong:
+      - free energy principle
+      - predictive processing
+      - predictive mind
+      - active inference
+      - prediction error minimization
+      - beautiful loop
+    abbreviation: [FEP, PP, PC]    # PP also polypropylene/pancreatic polypeptide; PC also personal computer
+    # Bare "predictive processing" is also used generically (speech, language, timing papers). It counts as a direct
+    # mention only if corroborated: in the title/abstract, or the paper also has another strong or close_term of this
+    # theory. (The global domain_context rule already applies to every strong term and does not remove these.)
+    needs_corroboration:
+      - predictive processing
+    close_term:
+      - predictive machine    # demoted from strong after the precision audit (2 of 2 audited hits were false positives)
+      - predictive coding
+      - hierarchical predictive coding
+      - Bayesian brain
+      - Bayesian brain hypothesis    # sibling form of "Bayesian brain"; moved with it for consistency
+      - predictive brain
+      - variational free energy
+      - Markov blanket
+    adjacent: []
+    landmark_refs:
+      - {surname: Rao, year: 1999}
+      - {surname: Friston, year: 2005}
+      - {surname: Friston, year: 2006}
+      - {surname: Friston, year: 2009}
+      - {surname: Friston, year: 2010}
+      - {surname: Clark, year: 2013, title_hint: predict}
+      - {surname: Clark, year: 2016, title_hint: predict}
+      - {surname: Hohwy, year: 2013}
+      - {surname: Seth, year: 2014}
+      - {surname: Seth, year: 2016}
+      - {surname: Friston, year: 2017}         # "Active inference: a process theory"
+      - {surname: Parr, year: 2019}
+    excluded_generic:
+      - prediction
+      - predictive
+      - prediction error     # reinforcement learning, dopamine, statistics
+      - free energy          # thermodynamics, chemistry, protein binding
+      - inference
+      - Bayesian
+      - surprise
+      - generative model
+      - priors
+      - top-down
+      - feedback
+
+# -------------------------------------------------------------------------------------------------------------
+# domain_context: cognitive-neuroscience / philosophy-of-mind vocabulary. A strong-term hit is a direct mention
+# only if >= domain_context_min DISTINCT entries from this list appear in the same paper (title, abstract or
+# body; NOT the reference list). Case-insensitive, whole-word, stems listed explicitly. Edit freely.
+domain_context:
+  - brain
+  - neural
+  - neuron
+  - neurons
+  - neuronal
+  - neuroscience
+  - cortex
+  - cortical
+  - cognition
+  - cognitive
+  - consciousness
+  - conscious
+  - unconscious
+  - awareness
+  - perception
+  - perceptual
+  - phenomenal
+  - qualia
+  - mind
+  - mental
+  - experience
+  - subjective
+  - attention
+  - sensory
+  - philosophy
+  - philosophical
+  - metaphysics
+  - physicalism
+  - dualism
+  - fMRI
+  - EEG

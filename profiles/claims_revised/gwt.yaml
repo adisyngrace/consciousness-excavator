@@ -1,0 +1,54 @@
+theory: Global Workspace Theory
+key: global_workspace
+status: APPROVED 2026-10-11 (copied into profiles/gwt.yaml)
+core_claims:
+- id: gwt-c1
+  text: |-
+    Many specialised processors (perception, memory, evaluation, language, motor control) work in parallel, and the data flows they carry, from memory and from the senses, compete constantly with one another. Only the content that wins this competition becomes conscious.
+  source: description
+  change: |-
+    removed 'limited-capacity workspace' (capacity limit is not in the description; 'workspace' is the theory's own word); made competition the sole idea (broadcast moved to c2)
+  old_text: |-
+    Many specialised processors (perception, memory, evaluation, language, motor control) run in parallel and unconsciously. A piece of information is conscious when it wins a competition for access to a shared, limited-capacity workspace.
+- id: gwt-c2
+  text: |-
+    The winning content is sent out across the brain, so it becomes available at once to attention, memory, verbal description, assessment and motor response, while competing and conflicting data flows are inhibited. Being accessible throughout the brain is what makes one aware of it.
+  source: description
+  change: now the single broadcast/accessibility claim; no overlap with the competition claim
+  old_text: |-
+    The winning content is broadcast to the whole set of processors, so it becomes globally available for attention, memory, verbal report and action, while competing and conflicting contents are inhibited.
+- id: gwt-c3
+  text: |-
+    A set of interconnected cortical pyramidal neurons with long-range excitatory axons, dense in prefrontal, temporoparietal and cingulate regions and linked to thalamocortical loops, ties the specialised processors together. A conscious content is carried by the sustained, amplified activity of a subset of these neurons while the rest are inhibited, and this leads to a report of the experience.
+  source: description
+  change: removed the adjacent term 'ignition'; spelled out the mechanism
+  old_text: |-
+    In the brain this is implemented by a network of long-range excitatory cortical neurons, dense in prefrontal, temporoparietal and cingulate regions and linked with thalamocortical loops. The content of a conscious percept is carried by the sustained, amplified activity ('ignition') of a subset of these neurons.
+- id: gwt-c4
+  text: |-
+    Three observations constrain any account: a considerable amount of processing is possible without awareness, attention is a prerequisite for awareness, and awareness is required for some tasks, namely those needing durable information maintenance, novel combinations of operations or spontaneous generation of intentional behavior.
+  source: description
+  change: tightened to one constraint-setting idea; still the description's three observations
+  old_text: |-
+    Three empirical regularities frame the theory: a great deal of processing happens without awareness, attention is a prerequisite for awareness, and awareness is needed for specific tasks such as holding information over time, combining operations in novel ways, and spontaneously generating intentional behavior.
+- id: gwt-c5
+  text: |-
+    The prefrontal cortex is thought to coordinate and sustain the wide availability of a conscious content. In the newer brain-based version, however, the whole cortex, with the thalamus, acts as a flexibly recruited oscillatory system, so a sharp prefrontal versus non-prefrontal division is misleading.
+  source: description
+  change: now only the role of prefrontal cortex (original and revised view); the test results moved to c7
+  old_text: |-
+    The prefrontal cortex is thought to coordinate and sustain the broadcast. A newer, brain-based version treats the whole cortex as a flexibly recruited oscillatory system in which an arbitrary prefrontal versus non-prefrontal division is misleading.
+- id: gwt-c6
+  text: |-
+    Becoming aware of a stimulus is temporally flexible: sensory information is held for a while in a shared network and read out when it becomes relevant, so attention directed to its location after it has gone can bring that earlier stimulus into awareness.
+  source: description
+  change: removed the adjacent term 'conscious access' and the theory-name echo; same idea
+  old_text: |-
+    Conscious access is temporally flexible: sensory information can be held in a shared network and accessed when it becomes relevant, so attention directed to a location after a stimulus has gone can bring that earlier stimulus into awareness.
+- id: gwt-c7
+  text: The account holds that wide availability of a content occurs at the start and at the end of an experience
+    and relies on the prefrontal cortex.
+  source: description
+  change: REWRITTEN as requested; trimmed to the claim only (test-result clause removed, user decision 2026-10-11)
+  old_text: |-
+    Predictions that broadcast marks both the onset and the end of an experience, centered on prefrontal cortex, were only partly borne out in adversarial tests. Broadcast was seen at onset but not at offset, and only some aspects of consciousness were found in prefrontal cortex.

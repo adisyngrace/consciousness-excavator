@@ -1,0 +1,67 @@
+theory: Integrated Information Theory
+key: integrated_information
+status: core_claims revised and approved 2026-10-11
+core_claims:
+- id: iit-c1
+  text: 'The starting point is experience itself: its essential properties (it exists intrinsically, is structured, is specific,
+    is unified and is definite) are each translated into a requirement on what a physical system must be like, in terms of
+    its ability to make a difference to itself.'
+  source: description
+- id: iit-c2
+  text: Each experience is the particular way it is, by differing from all alternatives, so the physical system must specify
+    a particular pattern of what its present state implies about its past and future states, one that sets it apart from every
+    other possible pattern.
+  source: description
+- id: iit-c3
+  text: Each experience is unified, so the way a system's parts constrain one another cannot be reduced to what independent
+    subsets of the parts do alone. How much would be lost by cutting the system apart is measured by a quantity, phi, and
+    degrees of consciousness covary with it.
+  source: description
+- id: iit-c4
+  text: Each experience is definite in its content and in its spatial and temporal grain, so the set of elements that counts
+    as supporting it is the one whose organisation is maximally irreducible; overlapping, larger or smaller sets are excluded.
+  source: description
+- id: iit-c5
+  text: Each experience is identical to the overall shape formed by all the distinctions and relations the irreducible system
+    specifies, a shape whose mathematical properties match the properties of that experience and which is, in one description,
+    a shape seen from the inside.
+  source: description
+- id: iit-c6
+  text: Consciousness is a property of how a physical system is organised and of what it can constrain in its own past and
+    future, not of what it computes. A simulation that only reproduces the function is therefore not conscious, and the substrate
+    need not be a brain or even biological.
+  source: description
+- id: iit-c7
+  text: Each experience is composed of many distinctions, so combinations of a system's elements, not only single elements,
+    must themselves make a difference to the system. Higher-order combinations specify concepts, and the set of all of them
+    gives the overall form of the experience.
+  source: description
+seed_passages: []
+seed_passages_note: 'none: no abstract-only or OA-PDF seed with an abstract in 1995-2015 (in-corpus seeds are silver and excluded)'
+loc_description_pages:
+- slug: tononi-s-integrated-information-theory
+  chars: 18203
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: critiques-of-integrated-information-theory
+  chars: 5218
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: koch-compares-integrated-information-theory-with-panpsychism
+  chars: 3667
+  use_in_profile: false
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+public_release_note: LoC description text, loc_description_pages segment text and seed abstract text removed for licensing;
+  regenerate with src/level3_concepts/make_profiles.py from the scraped pages.

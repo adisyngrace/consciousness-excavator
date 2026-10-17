@@ -1,0 +1,72 @@
+theory: Champagne's semiotic account
+key: champagne_semiotic
+status: core_claims revised and approved 2026-10-11
+core_claims:
+- id: champagne-c1
+  text: A felt quality (what a color or a pain is like) can be pulled apart from every causal and inferential relation it
+    figures in only in thought, never in fact. This act of mental separation (prescission) shows what can and cannot be inferred
+    from the quality alone.
+  source: description
+- id: champagne-c2
+  text: 'Signs have three kinds of vehicle, not two: type, token and tone. A tone is a bare quality considered before any
+    instance or meaning is attached, and admitting it as a category stops experiential qualities from looking explanatorily
+    anomalous.'
+  source: description
+- id: champagne-c3
+  text: Reference to another person's experience can work through resemblance (iconicity) rather than causal contact or convention,
+    so one can grasp what an experience is like without having been exposed to its cause.
+  source: description + 2014 Champagne abstract
+- id: champagne-c4
+  text: 'The ''hard problem'' is dissolved, not solved: the distinction between quality and function is legitimate, but it
+    generates a puzzle only when it is reified into a separate kind of thing or a separate module of the mind.'
+  source: description + 2009 Champagne abstract
+- id: champagne-c5
+  text: 'A thing can be singled out by a mind''s activity without depending on any mind for what it is: the person does the
+    isolating, but which features the isolated quality has is fixed independently of who does it.'
+  source: description
+- id: champagne-c6
+  text: Explanation should rest on third-person elements that can be detected and checked, with no appeal to introspection;
+    science explains the mechanisms, and philosophy justifies the persistent sense that something is left over.
+  source: description
+- id: champagne-c7
+  text: 'Reality can be sorted into layers by modal level: regular sign relations (like coded language) subsume actual ones
+    (here-and-now events), which subsume possible ones (qualities tied to whatever would be similar to them). Locating a case
+    at its level shows how complex the sign process is, and lets uninterpreted phenomena such as qualities be counted as real.'
+  source: description + 2015 Champagne abstract
+- id: champagne-c8
+  text: Habit makes perception efficient but leads us to perceive what we expect rather than what is given. A disciplined
+    kind of attention that suspends practical and technological automatisms lets appearances be observed in their qualitative,
+    resistant and mediating aspects.
+  source: description
+seed_passages:
+- source: 'Champagne, M. (2009) Explaining the Qualitative Dimension of Consciousness: Prescission instead of Reification'
+  route: doi_only; full text via pdf (not extracted)
+  use: profile-only (abstract; not in corpus)
+- source: 'Champagne, M. (2014) Referring to the Qualitative Dimension of Consciousness: Iconicity Instead of Indexicality'
+  route: doi_only; full text via pdf (not extracted)
+  use: profile-only (abstract; not in corpus)
+- source: 'Champagne, M. (2015) A Less Simplistic Metaphysics: Peirce’s Layered Theory of Meaning as a Layered Theory of Being'
+  route: doi_only; full text via pdf (not extracted)
+  use: profile-only (abstract; not in corpus)
+excluded_seeds:
+- source: Deely, J. N. (2001) Four Ages of Understanding
+  route: doi_only; full text via none (not extracted)
+  use: profile-only (abstract; not in corpus)
+  reason_excluded: generic book blurb (user decision 2026-10-11)
+loc_description_pages:
+- slug: champagne-s-semiotic-account
+  chars: 8299
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+- slug: peirce-s-phaneroscopic-semiotics
+  chars: 11016
+  use_in_profile: true
+  segments:
+  - id: body
+    use_in_profile: true
+  - id: note-on-placement
+    use_in_profile: false
+public_release_note: LoC description text, loc_description_pages segment text and seed abstract text removed for licensing;
+  regenerate with src/level3_concepts/make_profiles.py from the scraped pages.

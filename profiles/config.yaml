@@ -1,0 +1,11 @@
+# Component weights for Step 4 (multiply cosine similarity; core claims are the primary component).
+weights:
+  core_claim: 1.0
+  description_window: 0.5
+  seed_abstract: 0.5
+# Step 4 contrast (z-scored). contrastive = z_theory - lambda_generic * z_generic [- mu_other_theories * mean z of the other four theories].
+# Not tuned: defaults as specified by the user on 2026-10-11 (mu mirrors lambda for the optional variant).
+contrast:
+  lambda_generic: 0.5
+  mu_other_theories: 0.5
+  generic_paragraph_weight: 1.0

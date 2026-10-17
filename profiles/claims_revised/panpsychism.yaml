@@ -1,0 +1,55 @@
+theory: Panpsychism
+key: panpsychism
+status: APPROVED 2026-10-11 (copied into profiles/panpsychism.yaml)
+core_claims:
+- id: panpsychism-c1
+  text: |-
+    Experience (or a precursor of experience) is a primitive, non-reducible feature of the fundamental constituents of physical reality, as basic as fields and particles, rather than something that appears only in brains.
+  source: description
+  change: unchanged
+  old_text: |-
+    Experience (or a precursor of experience) is a primitive, non-reducible feature of the fundamental constituents of physical reality, as basic as fields and particles, rather than something that appears only in brains.
+- id: panpsychism-c2
+  text: |-
+    Physics tells us how fundamental fields and particles relate to each other but not what they are in themselves. The proposal is that their intrinsic nature is experiential, which places consciousness inside the physical world and gives it a causal role.
+  source: description
+  change: removed the theory name
+  old_text: |-
+    Physics describes how fundamental entities relate to each other but not what they are in themselves; panpsychism proposes that the intrinsic nature of those entities is experiential, which puts consciousness inside the physical world and gives it a causal role.
+- id: panpsychism-c3
+  text: |-
+    Richer minds arise when micro-level experiential properties combine under the right conditions. How many simple subjects or properties add up to one unified larger experience, or how a single cosmic mind is divided into individual ones, is the central unsolved difficulty.
+  source: description
+  change: removed the listed strong term 'combination problem'
+  old_text: |-
+    Richer minds arise when micro-level experiential properties combine under the right conditions. How many micro-subjects or properties add up to one unified macro-experience, or how a cosmic mind is divided into individual ones, is the central unsolved problem (the combination problem).
+- id: panpsychism-c4
+  text: |-
+    Proposed ways for small experiencing units to merge into larger ones include synchronised oscillation or resonance, with electromagnetic fields serving as the binding medium in biological systems.
+  source: description
+  change: reworded 'combination mechanisms'; same idea
+  old_text: |-
+    Proposed combination mechanisms include synchronised oscillation or resonance among micro-conscious elements, with electromagnetic fields serving to bind them into larger units.
+- id: panpsychism-c5
+  text: |-
+    If experience is not to be explained away, then either the concept of experience or the concept of nature must be revised; this view revises nature by placing experience at the fundamental level instead of deflating experience, and so avoids both reduction and a separate mental realm.
+  source: description
+  change: now the single motivation claim (revise nature, not experience); old text overlapped c2 on 'inside the
+    physical world'
+  old_text: |-
+    The motivation is the hard problem: if consciousness is not to be explained away, nature must be conceived more broadly, so a view is sought that sits between reductive materialism and mind-body dualism.
+- id: panpsychism-c6
+  text: |-
+    Experience cannot be derived from the arrangement of parts that are entirely non-experiential, so if brains are conscious, the matter they are made of must already have an experiential aspect.
+  source: description + 2009 Strawson abstract
+  change: 'REWRITTEN as requested: the general no-emergence-from-nothing claim instead of a paraphrase of one philosopher''s
+    argument'
+  old_text: |-
+    A realistic materialist who takes consciousness to be a real physical phenomenon must hold that matter is not wholly non-conscious in its ultimate nature, because something cannot come from what is wholly non-something.
+- id: panpsychism-c7
+  text: |-
+    The view comes in versions that differ in what is fundamental: experience in the smallest particles, in the universe as a whole, in a field, or in fundamental simple subjects (monads).
+  source: description
+  change: removed the listed strong terms 'micropsychism' and 'cosmopsychism'
+  old_text: |-
+    The view comes in several forms that differ in what is fundamental: experience in the smallest particles (micropsychism), in the universe as a whole (cosmopsychism), or in a field or in fundamental monads.

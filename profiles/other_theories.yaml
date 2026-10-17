@@ -1,0 +1,28 @@
+note: 'cross-theory contrast: for each theory, the other four profiles (resolved by
+  key at scoring time)'
+others:
+  champagne_semiotic:
+  - global_workspace
+  - integrated_information
+  - panpsychism
+  - predictive_processing_fep
+  global_workspace:
+  - champagne_semiotic
+  - integrated_information
+  - panpsychism
+  - predictive_processing_fep
+  integrated_information:
+  - champagne_semiotic
+  - global_workspace
+  - panpsychism
+  - predictive_processing_fep
+  panpsychism:
+  - champagne_semiotic
+  - global_workspace
+  - integrated_information
+  - predictive_processing_fep
+  predictive_processing_fep:
+  - champagne_semiotic
+  - global_workspace
+  - integrated_information
+  - panpsychism

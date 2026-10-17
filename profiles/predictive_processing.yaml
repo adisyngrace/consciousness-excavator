@@ -1,0 +1,89 @@
+theory: Predictive Processing / Free Energy Principle
+key: predictive_processing_fep
+status: core_claims revised and approved 2026-10-11
+core_claims:
+- id: predictive_processing-c1
+  text: The brain does not passively receive sensory signals. It continuously generates predictions about the causes of its
+    sensory input and top-down signals carry these predictions, while bottom-up signals carry only the mismatches (prediction
+    errors).
+  source: description
+- id: predictive_processing-c2
+  text: 'Perception, learning and action are all described by one operation: reducing the mismatch between predicted and actual
+    sensory input, either by revising the internal model or by acting on the world. This approximates Bayesian inference,
+    in which prior expectations are combined with sensory evidence.'
+  source: description + 2005 Friston abstract
+- id: predictive_processing-c3
+  text: The internal model is hierarchical, so that higher levels supply context-sensitive priors to lower levels. This predicts
+    reciprocal cortical connections, an asymmetry between forward and backward connections, and effects such as repetition
+    suppression and the mismatch negativity.
+  source: seed abstract (2005 Friston)
+- id: predictive_processing-c4
+  text: Living organisms persist by keeping themselves in a narrow set of stable, low-surprise states (attractors, as in homeostasis).
+    Minimising surprise, the gap between expected and actual sensory states, is the formal expression of this self-maintenance.
+  source: description
+- id: predictive_processing-c5
+  text: Experience is not a thing with fixed attributes but the outcome of an inferential process, the brain's best guess
+    about the causes of its sensations, comparable to a natural process such as evolution or the weather.
+  source: description
+- id: predictive_processing-c6
+  text: Each prediction and each error signal carries an expected reliability (its precision) that sets how strongly it is
+    weighted. A higher level that controls precision across all layers is proposed to give the system its flexible, general-purpose
+    epistemic agency.
+  source: description
+- id: predictive_processing-c7
+  text: A related family of views identifies the conscious state with recurrent top-down (reentrant) signalling itself, whereas
+    the predictive view treats that signalling as carrying predictions about the causes of the senses and does not by itself
+    say what makes a state conscious.
+  source: description
+- id: predictive_processing-c8
+  text: The predictive capacity evolved for survival in mobile creatures, which must anticipate the outcome of each movement,
+    and consciousness is thought to facilitate it by supporting awareness, responsiveness and flexible handling of future
+    states.
+  source: description
+seed_passages:
+- source: Karl Friston (2005) A theory of cortical responses
+  route: resolved_no_fulltext; full text via landing (not extracted)
+  use: profile-only (abstract; not in corpus)
+- source: (2013) Clark, 2013. Andy Clark, Whatever next? Predictive brains, situated agents, and the future
+  route: resolved_no_fulltext; full text via pdf (not extracted)
+  use: profile-only (abstract; not in corpus)
+excluded_seeds:
+- source: (2006) Buzsáki, 2006. György Buzsáki, Rhythms of the brain. Oxford University Press.
+  route: doi_only; full text via none (not extracted)
+  use: profile-only (abstract; not in corpus)
+  reason_excluded: book blurb on brain oscillations, only marginal to the theory (user decision 2026-10-11)
+loc_description_pages:
+- slug: predictive-theories-top-down
+  chars: 5504
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: friston-s-free-energy-principle-and-active-inference
+  chars: 7868
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: sebastian-s-predictive-machine
+  chars: 7170
+  use_in_profile: true
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+- slug: ostendorf-s-predictive-pattern-driven-interface
+  chars: 2795
+  use_in_profile: false
+  segments:
+  - id: p1
+    use_in_profile: true
+  - id: p3
+    use_in_profile: true
+public_release_note: LoC description text, loc_description_pages segment text and seed abstract text removed for licensing;
+  regenerate with src/level3_concepts/make_profiles.py from the scraped pages.
